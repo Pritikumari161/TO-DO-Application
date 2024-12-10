@@ -1,0 +1,119 @@
+/* Reset browser defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    color: #333;
+}
+
+/* To-Do container */
+.ToDo {
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Heading styling */
+.ToDo h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ff6f61;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Input field styling */
+.ToDo input {
+    width: 80%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    transition: border-color 0.3s;
+}
+
+.ToDo input:focus {
+    border-color: #ff6f61;
+    outline: none;
+}
+
+/* Add Task button */
+.ToDo button {
+    padding: 10px 20px;
+    background: #ff6f61;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+    margin-top: 10px;
+}
+
+.ToDo button:hover {
+    background: #ff4f41;
+    transform: translateY(-2px);
+}
+
+.ToDo button:active {
+    transform: translateY(0);
+}
+
+/* Task list styling */
+.ToDo ul {
+    list-style-type: none;
+    margin-top: 20px;
+    padding: 0;
+}
+
+.ToDo ul li {
+    background: #f9f9f9;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Task text */
+.ToDo ul li span {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Delete button for tasks */
+.ToDo ul li button {
+    background: #ff4f41;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 0.9rem;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.ToDo ul li button:hover {
+    background: #ff6f61;
+}
+
+.ToDo ul li button:active {
+    transform: translateY(2px);
+}
